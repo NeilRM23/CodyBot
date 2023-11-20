@@ -80,17 +80,17 @@ def strategyAttack(jsonResponse):
     # IMPORTANT: Make sure you add the skill and his priority, you will recieve a error if you dont
     customOrder = {27: 0,
                     29: 1,
-                    3: 2,
-                    38: 3,
+                    2: 2,
+                    54: 3,
                     45: 4,
                     50: 1
                 }
     
     # This variable is used to define which skill to prioritize, if you dont want to prioritized any skill put a random number 
-    idPrioritizedSkill = 27
+    idPrioritizedSkill = 45
     
     # The listIdDamageSkills is a list with the skills we want the bot to execute
-    listIdDamageSkills = [38, 45, 27, 3, 29, 50] # 2: Push  45: Hit  3: Magnetic Pull 27: Blade Strike  29: Laser Blast  38: Direct Attack  50: Detain
+    listIdDamageSkills = [54, 45, 27, 2, 29, 50] # 2: Push  45: Hit  3: Magnetic Pull 27: Blade Strike  29: Laser Blast  38: Direct Attack  50: Detain
     
     Count = 0
     # Here we add the information of the skill we want to execute to a dictionary
