@@ -1,6 +1,6 @@
 from core.client import Client
 from core.nodemap import Graph, getMap
-from strategies.hunterStrategy import strategyPath, strategyAttack
+from strategies.sapperStrategy import strategyPath, strategyAttack
 import time
 
 player = Client(ckey="your_key")
@@ -74,12 +74,12 @@ def loopGames(player):
                 print(f"Times Won : {CountWins}")
                 print(f"Times Lossed : {CountLosses}")
             CountMatchs = CountMatchs + 1
-            player.create_room(0)
+            player.create_room(3)
         elif idStatus == 0:
             print("Registering players.. waiting 15 seconds")
             time.sleep(15)
         elif idStatus == -1:
-            player.create_room(0)
+            player.create_room(3)
         else:
             print(f"Unknown status! {idStatus}")
             
