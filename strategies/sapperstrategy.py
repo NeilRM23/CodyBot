@@ -40,7 +40,7 @@ def strategyPath(jsonResponse):
     # (Just adding the movements of the skill with cost 0 to the player node should prioritize the use of these by dijkstra)
     
     # Add Here the id of the skills
-    listIdMovementSkills = [28] # 28: Double Time
+    listIdMovementSkills = [8] # 8:Run Run Run
     
     # If any movement skill is available to use, it will use it, no restrictions of energy for now
     
@@ -78,19 +78,19 @@ def strategyAttack(jsonResponse):
     # This dictionary is going to be used to organize the skill we want to use first, the key is the id of the skill and the value is the priority we want to give it
     # less the number = major priority. 
     # IMPORTANT: Make sure you add the skill and his priority, you will recieve a error if you dont
-    customOrder = {27: 0,
-                    29: 1,
-                    2: 2,
-                    54: 3,
+    customOrder = {46: 0,
+                    10: 1,
+                    9: 2,
+                    45: 3,
                     45: 4,
                     50: 1
                 }
     
     # This variable is used to define which skill to prioritize, if you dont want to prioritized any skill put a random number 
-    idPrioritizedSkill = 45
+    idPrioritizedSkill = 46
     
     # The listIdDamageSkills is a list with the skills we want the bot to execute
-    listIdDamageSkills = [54, 45, 27, 2, 29, 50] # 2: Push  45: Hit  3: Magnetic Pull 27: Blade Strike  29: Laser Blast  38: Direct Attack  50: Detain
+    listIdDamageSkills = [46, 10, 9, 45, 29, 50] # 2: Push  45: Hit  3: Magnetic Pull 27: Blade Strike  29: Laser Blast  38: Direct Attack  50: Detain
     
     Count = 0
     # Here we add the information of the skill we want to execute to a dictionary
