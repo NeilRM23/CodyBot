@@ -1,6 +1,6 @@
 from core.client import Client
 from core.nodemap import Graph, getMap
-from strategies.sapperStrategy import strategyPath, strategyAttack
+from strategies.hunterStrategy import strategyPath, strategyAttack
 import time
 
 player = Client(ckey="your_key")
