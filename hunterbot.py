@@ -74,12 +74,12 @@ def loopGames(player):
                 print(f"Times Won : {CountWins}")
                 print(f"Times Lossed : {CountLosses}")
             CountMatchs = CountMatchs + 1
-            player.create_room(3)
+            player.create_room(0)
         elif idStatus == 0:
             print("Registering players.. waiting 15 seconds")
             time.sleep(15)
         elif idStatus == -1:
-            player.create_room(3)
+            player.create_room(0)
         else:
             print(f"Unknown status! {idStatus}")
             
