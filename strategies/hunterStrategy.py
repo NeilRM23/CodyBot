@@ -82,7 +82,7 @@ def strategyAttack(jsonResponse):
                     10: 1,
                     9: 2,
                     45: 3,
-                    45: 4,
+                    2: 4,
                     50: 1
                 }
     
@@ -90,7 +90,7 @@ def strategyAttack(jsonResponse):
     idPrioritizedSkill = 46
     
     # The listIdDamageSkills is a list with the skills we want the bot to execute
-    listIdDamageSkills = [46, 10, 9, 45, 29, 50] # 2: Push  45: Hit  3: Magnetic Pull 27: Blade Strike  29: Laser Blast  38: Direct Attack  50: Detain
+    listIdDamageSkills = [46, 10, 9, 45, 2, 50] # 2: Push  45: Hit  3: Magnetic Pull 27: Blade Strike  29: Laser Blast  38: Direct Attack  50: Detain
     
     Count = 0
     # Here we add the information of the skill we want to execute to a dictionary
